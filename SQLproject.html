@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">MORE</a>
+					</header>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+
+						<section class="post">
+							<header class="major">
+								<h1>Item-level A/B testing<br />
+								</h1>
+								<p></p>
+							</header>
+							<blockquote>This is a SQL project of an eCommerce company, we have users and we can alter their experience, but we also have items for sale. By changing the way the items look for some portion of items, we can conduct A/B testing at an item-level and measuring “success” at an item level. Running an experiment at an item-level, all users who visit will see the same page, but the layout of different item pages may differ.</blockquote>
+							<div class="image main"><img src="images/ABtesting.jpg" alt="" /></div>
+
+							<!-- Blockquote -->
+							<h2>1. Data Quality Check</h2>
+							<div class="image main"><img src="images/code00.png" alt="" /></div>
+							<div class="image main"><img src="images/result00.png" alt="" /></div>
+							<div class="image main"><img src="images/code01.png" alt="" /></div>
+							<div class="image main"><img src="images/result01.png" alt="" /></div>
+							<blockquote>After quality check, we are confident that there's no NULL value. But the final_assignments_qa table is not enough to compute metrics like 30-day view-binary, because we are missing information like test date/time.</blockquote>
+
+						    <!-- Blockquote -->
+							<h2>2. Reformat the Data</h2>
+							<blockquote>Write a query and table creation statement to make final_assignments_qa look like the final_assignments table. If something missing, we may fill in the value with a place holder of the appropriate data type. </blockquote>
+							<div class="image main"><img src="images/code02.png" alt="" /></div>
+							<div class="image main"><img src="images/result02.png" alt="" /></div>
+							<div class="image main"><img src="images/code03.png" alt="" /></div>
+							<div class="image main"><img src="images/result03.png" alt="" /></div>
+
+						    <!-- Blockquote -->
+							<h2>3. Compute Order Binary</h2>
+							<div class="image main"><img src="images/code04.png" alt="" /></div>
+							<div class="image main"><img src="images/result04.png" alt="" /></div>
+							<div class="image main"><img src="images/graph04.png" alt="" /></div>
+
+						    <!-- Blockquote -->
+							<h2>4. Compute lift and p-value for order binary</h2>
+							<blockquote>Use the https://thumbtack.github.io/abba/demo/abba.html to compute the lifts in metrics and the p-values. </blockquote>
+							<div class="image main"><img src="images/result05.png" alt="" /></div>
+							<blockquote>There was an improvement of -1% in the treatment group with the new layout item pages. However, with a p value of 0.88 the results are not statistically significant at a interval 95% confidence. Therefore, we cannot conclude that the decrease of order conversion rate was caused by the new layout design.</blockquote>
+
+						    <!-- Blockquote -->
+							<h2>5. Compute View Item Metrics</h2>
+							<div class="image main"><img src="images/code0601.png" alt="" /></div>
+							<div class="image main"><img src="images/code0602.png" alt="" /></div>
+							<div class="image main"><img src="images/result06.png" alt="" /></div>
+							<div class="image main"><img src="images/graph0601.png" alt="" /></div>
+							<div class="image main"><img src="images/graph0602.png" alt="" /></div>
+
+						    <!-- Blockquote -->
+							<h2>6. Compute lift and p-value for view binary</h2>
+							<blockquote>Use the https://thumbtack.github.io/abba/demo/abba.html to compute the lifts in metrics and the p-values. </blockquote>
+							<div class="image main"><img src="images/result07.png" alt="" /></div>
+							<blockquote>There was an improvement of 2.6% in the treatment group with the new layout item pages. However, with a p value of 0.20 the results are not statistically significant at a interval 95% confidence. Therefore, we cannot conclude that the increase of conversion rate in views was caused by the new layout design.</blockquote>
+
+
+
+					</div>
+
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: HTML5 UP</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
