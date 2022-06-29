@@ -2676,6 +2676,12 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+/* Video */
+	video {
+		width: 100%;
+		height: auto;
+	}
+
 /* Actions */
 
 	ul.actions {
